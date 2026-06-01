@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foodie — Delicious Food Delivered Fast</title>
+<meta name="description" content="Order pizza, burgers, biryani, drinks and desserts delivered fast to your door." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body data-theme="dark">
+
+<!-- LOADER -->
+<div id="loader" class="loader">
+  <div class="loader-ring"></div>
+  <div class="loader-text">Foodie</div>
+</div>
+
+<!-- OFFER BANNER -->
+<div class="offer-banner">
+  <i class="fa-solid fa-tag"></i>
+  <span>Limited time: <strong>30% OFF</strong> your first order — use code <strong>FOODIE30</strong></span>
+  <button class="offer-close" aria-label="Close">&times;</button>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+      <span>Foodie</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#popular" class="nav-link">Popular</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="container">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search for pizza, burger, biryani..." />
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-content reveal">
+      <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Fast delivery in 30 minutes</span>
+      <h1 class="hero-title">Delicious Food<br/><span class="gradient-text">Delivered Fast</span></h1>
+      <p class="hero-sub">Fresh, hot and crafted by top chefs — order your favorites from the city's best kitchens and enjoy at your doorstep.</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+        <a href="#popular" class="btn btn-ghost"><i class="fa-solid fa-fire"></i> Explore Menu</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong data-counter="50">0</strong>K+<span>Happy Customers</span></div>
+        <div><strong data-counter="120">0</strong>K+<span>Orders Delivered</span></div>
+        <div><strong data-counter="15">0</strong>+<span>Years Experience</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-plate">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=900&q=80" alt="Delicious pizza" />
+      </div>
+      <div class="float-card float-1">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div><strong>Free Delivery</strong><span>Orders over $25</span></div>
+      </div>
+      <div class="float-card float-2">
+        <i class="fa-solid fa-star"></i>
+        <div><strong>4.9 Rating</strong><span>12k+ Reviews</span></div>
+      </div>
+      <div class="float-card float-3">
+        <i class="fa-solid fa-percent"></i>
+        <div><strong>30% OFF</strong><span>First order</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+  <div class="container promo-grid">
+    <div class="promo-card promo-1">
+      <div>
+        <span class="badge">Hot Deal</span>
+        <h3>Buy 1 Get 1 Free</h3>
+        <p>On all large pizzas every Tuesday</p>
+        <a href="#menu" class="btn-link">Order now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <i class="fa-solid fa-pizza-slice promo-icon"></i>
+    </div>
+    <div class="promo-card promo-2">
+      <div>
+        <span class="badge">New</span>
+        <h3>Weekend Combo</h3>
+        <p>Burger + Fries + Drink for just $9.99</p>
+        <a href="#menu" class="btn-link">Grab deal <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <i class="fa-solid fa-burger promo-icon"></i>
+    </div>
+    <div class="promo-card promo-3">
+      <div>
+        <span class="badge">Special</span>
+        <h3>Family Biryani</h3>
+        <p>Feast for 4 with 25% off this month</p>
+        <a href="#menu" class="btn-link">Order feast <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <i class="fa-solid fa-bowl-rice promo-icon"></i>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-utensils"></i> Our Menu</span>
+      <h2>Browse Our <span class="gradient-text">Delicious Menu</span></h2>
+      <p>Hand-picked dishes from our best chefs, made fresh daily.</p>
+    </div>
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pizza"><i class="fa-solid fa-pizza-slice"></i> Pizza</button>
+      <button class="filter-btn" data-filter="burger"><i class="fa-solid fa-burger"></i> Burger</button>
+      <button class="filter-btn" data-filter="biryani"><i class="fa-solid fa-bowl-rice"></i> Biryani</button>
+      <button class="filter-btn" data-filter="drinks"><i class="fa-solid fa-mug-hot"></i> Drinks</button>
+      <button class="filter-btn" data-filter="desserts"><i class="fa-solid fa-ice-cream"></i> Desserts</button>
+    </div>
+    <div class="food-grid" id="foodGrid"></div>
+  </div>
+</section>
+
+<!-- POPULAR -->
+<section class="section section-alt" id="popular">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-fire"></i> Trending Now</span>
+      <h2>Most <span class="gradient-text">Popular Dishes</span></h2>
+      <p>What everyone's ordering this week.</p>
+    </div>
+    <div class="popular-grid" id="popularGrid"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-img reveal">
+      <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=900&q=80" alt="Chef preparing food" />
+      <div class="about-badge"><i class="fa-solid fa-award"></i><div><strong>Award Winning</strong><span>Best Restaurant 2024</span></div></div>
+    </div>
+    <div class="about-content reveal">
+      <span class="eyebrow"><i class="fa-solid fa-heart"></i> About Foodie</span>
+      <h2>Crafting <span class="gradient-text">Delicious Moments</span> Since 2010</h2>
+      <p>From humble beginnings to a city-favorite, we serve thousands of food lovers daily with passion, quality ingredients and lightning-fast delivery. Our chefs combine global flavors with local roots to bring you unforgettable meals.</p>
+      <div class="about-stats">
+        <div class="stat-card"><strong data-counter="50">0</strong><span>K+ Happy Customers</span></div>
+        <div class="stat-card"><strong data-counter="120">0</strong><span>K+ Orders Delivered</span></div>
+        <div class="stat-card"><strong data-counter="15">0</strong><span>+ Years Experience</span></div>
+        <div class="stat-card"><strong data-counter="80">0</strong><span>+ Expert Chefs</span></div>
+      </div>
+      <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Start Ordering</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section section-alt" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-comments"></i> Testimonials</span>
+      <h2>What Our <span class="gradient-text">Customers Say</span></h2>
+      <p>Real reviews from real food lovers.</p>
+    </div>
+    <div class="slider" id="reviewSlider">
+      <div class="slider-track" id="sliderTrack"></div>
+      <div class="slider-controls">
+        <button id="prevReview" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button id="nextReview" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow"><i class="fa-solid fa-envelope"></i> Get in Touch</span>
+      <h2>We'd Love to <span class="gradient-text">Hear From You</span></h2>
+      <p>Questions, feedback or catering requests — drop us a line.</p>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-location-dot"></i>Hitech City, Hyderabad, Telangana 500081</li>
+        <li><i class="fa-solid fa-phone"></i> +91 7997248754</li>
+        <li><i class="fa-solid fa-envelope"></i>karnatisudheer3@gmail.com</li>
+      </ul>
+      <div class="socials">
+        <a href="https://github.com/KarnatiSudheer123" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/karnati-sudheer-21970437a/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://web.whatsapp.com/" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <input type="text" placeholder="Subject" required />
+      <textarea rows="5" placeholder="Your message..." required></textarea>
+      <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo"><span class="logo-icon"><i class="fa-solid fa-utensils"></i></span><span>Foodie</span></a>
+      <p class="footer-about">Delicious food delivered to your door — fresh, fast and always satisfying.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/karnati.sudheer.18" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://web.whatsapp.com/" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Opening Hours</h4>
+      <ul class="footer-links">
+        <li>Mon - Fri: 10am - 11pm</li>
+        <li>Sat - Sun: 9am - 12am</li>
+        <li>Delivery: 24/7</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p class="footer-about">Subscribe for offers & new menu drops.</p>
+      <form class="newsletter" id="newsletterForm">
+        <input type="email" placeholder="Your email" required />
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© <span id="year"></span> Foodie. All rights reserved. Made with <i class="fa-solid fa-heart" style="color:var(--primary)"></i></div>
+  </div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-head">
+    <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn"><i class="fa-solid fa-credit-card"></i> Checkout</button>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<!-- FLOATING BUTTONS -->
+<button class="float-delivery" id="floatDelivery" aria-label="Quick order">
+  <i class="fa-solid fa-truck-fast"></i>
+  <span>Quick Order</span>
+</button>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+<script src="/script.js"></script>
+</body>
+</html>
